@@ -7,6 +7,11 @@ cc_binary(
 cc_binary(
     name = 'logging',
     srcs = ['logging.cc'],    
-    linkopts = ["-lboost_log", "-lpthread"],
+    linkopts = ["-lboost_log_setup", "-lboost_log", "-lboost_thread", "-lpthread"],
     copts = ["-DBOOST_LOG_DYN_LINK"]
+)
+
+cc_binary(
+    name = "lexical_cast",
+    srcs = ["lexical_cast.cc"]
 )
