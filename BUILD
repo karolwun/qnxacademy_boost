@@ -15,3 +15,14 @@ cc_binary(
     name = "lexical_cast",
     srcs = ["lexical_cast.cc"]
 )
+
+cc_binary(
+    name = "pool",
+    srcs = ["pool.cc"]
+)
+
+cc_binary(
+    name = 'cpp17',
+    srcs = ["cpp17.cc"],
+    linkopts = ["-lboost_filesystem"]
+)

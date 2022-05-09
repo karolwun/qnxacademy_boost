@@ -1,5 +1,4 @@
 #include <boost/lexical_cast.hpp>
-#include <boost/locale.hpp>
 #include <iostream>
 #include <string>
 #include <sstream>
