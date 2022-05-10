@@ -17,8 +17,9 @@ cc_binary(
 )
 
 cc_binary(
-    name = "pool",
-    srcs = ["pool.cc"]
+    name = "ipc",
+    srcs = ["ipc.cc"],
+    linkopts = ["-lpthread", "-lrt"]
 )
 
 cc_binary(
