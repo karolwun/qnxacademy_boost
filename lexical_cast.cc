@@ -32,6 +32,20 @@ void simple_casts_boost()
     std::cout << a << " " << b << " " << c << "\n";
 }
 
+template<typename T>
+int add(const T & a, const T & b)
+{
+    //no matter what type it is, as long as can be casted
+    return lexical_cast<int>(a) + lexical_cast<int>(b);
+}
+
+template<typename T>
+T addt(int a, int b)
+{
+    //no matter what type it is, as long as can be casted
+    return lexical_cast<T>(a) + lexical_cast<T>(b);
+}
+
 class SomeData
 {
 public:
